@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: pink;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: grey;
+  color: pink;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.button {
+  border: none;
+  background-color: pink;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Girl Talk With MSCS</h1>
+  <p>The safe place for our girls</p>
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="news.html">News</a>
+  <a href ="discussion.html"> Discussion Board </a>
+  <a href="counseling.html" style="float:right">Counseling</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+  <div class="header">
+      <h2>Empower a Girl. Change her World. Change her Future.</h2>
+      <img src="counseling5.png" alt="counselingphoto" width="600" height="400">
+      <p><strong>Girl Talk is a counseling and social network for the girls of MSCS. It is open for girls of grades 6th-12th. They will get the opportunity to connect with different counselors and connect with different students</p>
+      <p> This is a positive platform. Any posts of bullying will not be tolerated and suspension for school will occur. </p> 
+    </div>
+    </div>
+    <div class="card">
+      <div class="header"> 
+         <h2> YOU GO GIRL SPOTLIGHT CORNER</h2> 
+      <img src = "east.png" alt="success" width="330" height="350">
+      <p><Strong>Congrats to Jane Doe and Jane Doe!!</strong></p>
+      <p> These two participated in the Annual Scholars Dinner for MSCS Valedictorian and Salutatorians! Way to go! We are so proud of you!</p>
+    </div>
+  </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class ="header"> <h2>About</h2> 
+      <p>Girl talk with MSCS provide counseling services for our youth within our community. To learn more about Girl talk....</p>
+      <div class="button"> <form action = "about.html">
+    <button>
+        CLICK HERE
+    </button>
+</form></div>
+
+
+    </div>
+    <div class="card">
+      <div class= "header"> <h3>Popular Post</h3> 
+      <img src = "headshot.png" alt="headshot" width="100" height="100"><p> Jane doe signs to Maryville University! </p> </div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Follow us on Instagram</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>MSCS COMMUNITY</h2>
+</div>
+
+</body>
+</html>
